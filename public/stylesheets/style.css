@@ -1,0 +1,151 @@
+/*font-family: 'Alfa Slab One', cursive;
+font-family: 'Open Sans', sans-serif;
+
+*/
+
+
+
+.hero{
+    height: 100vh;
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+    min-height: 600px;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+h1 {
+    font-family: 'alfa slab one', cursive;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #e0f0dd;
+}
+
+.hero-sub {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.btn-main {
+    font-family: 'open sans', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.5em 1.7em;
+    color: #62de3c;
+    background-color: #35e30560;
+    border: 1px solid;
+    transition: all 0.25s ease;
+    text-decoration: none;
+}
+
+.btn-main:hover {
+    color: #09140d;
+    transform: translateY(-0.25em);
+    box-shadow: 0 0.5em 0.5em -0.4em #011c08;
+}
+
+.btn-second {
+    font-family: 'open sans', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.5em 1.7em;
+    color: #05e386;
+    background-color: none;
+    border: 1px solid;
+    transition: all 0.25s ease;
+    text-decoration: none;
+}
+
+.btn-second:hover {
+    color: #00a761;
+    transform: translateY(-0.25em);
+    box-shadow: 0 0.5em 0.5em -0.4em #80ff79;
+}
+
+.btn-cerrar {
+    font-family: 'open sans', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.5em 1.7em;
+    color: #eff4f0;
+    background-color: #212529;
+    border: 1px solid;
+}
+
+.btn-cerrar:hover {
+    color: #0d3a00;
+    background-color: #eff4f0;
+}
+
+.lista-productos {
+    margin: 0;
+    padding: 0;
+    padding-top: 1em;
+    list-style: none;
+}
+
+.lista-productos li {
+    margin: 4px 0;
+}
+
+.lista-productos li a {
+    background-color: #426b69;
+    font-family: 'alfa slab one', cursive;
+    text-decoration: none;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: #eff4f0;
+    transition: all .2s ease-in-out;
+    display: block;
+    width: 70%;
+}
+
+.lista-productos li a:hover {
+    color: #426b47;
+    background-color: #eff4f0;
+}
+
+.lista-productos li a img {
+    width: 130px;
+    height: 80px;
+    filter: grayscale();
+    transition: all .2s ease-in-out;
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+
+.lista-productos li a:hover img {
+    filter: none;
+    margin-right: 1.4rem;
+    opacity: 1;
+}
+
+
+h2 {
+    font-family: 'alfa slab one', cursive;
+    padding-bottom: 0.2em;
+    color: #05ab52;
+    border-bottom: 1px solid #05c22b;
+    width: 70%;
+}
+
+
+
+#exampleModalLabel {
+    font-size: 1.3em;
+    color: #003a1e;
+}
+
+
+#contactanos h2 {
+    font-family: 'alfa slab one', cursive;
+    padding: 0.3em 0;
+    color: #42f082;
+    border-bottom: 1px solid #42f0bf;
+}
+.clients {
+    background-color: #eff4f0;
+    padding-bottom: 4rem !important;
+}
+
+

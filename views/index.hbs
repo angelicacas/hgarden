@@ -1,0 +1,269 @@
+<!-- HEADER -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">HOMEGARDEN</a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        </button>
+        <a href='#' class="navbar-brand"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#expand"
+          aria-controls="expand" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="expand">
+          <div class="navbar-nav">
+            <a class='nav-link' href="#home">Home</a>
+            <a class='nav-link' href="#novedades">Novedades</a>
+            <a class='nav-link' href="#historia">Historia</a>
+            <a class='nav-link' href="#nosotros">Nosotros</a>
+            <a class='nav-link' href="#conocenos">Conocenos</a>
+
+          </div> <!-- NAVBAR NAV-->
+
+          <a href="#contactanos" class="btn-second">Contactanos</a>
+
+        </div> <!-- COLLAPSE -->
+  </div> <!-- CONTAINER -->
+</nav>
+<!-- TERMINA HEADER -->
+
+<!-- HERO -->
+<div class="container-fluid"></div>
+<div id="home" class="row align-items-center hero">
+  <div class="" col-lg-3 offset-lg-2"">
+    <h1>HOME GARDEN</h1>
+    <p>NOS GUSTA LO ÚNICO, LO NATURAL, LO SENSIBLE, TODO AQUELLO QUE NOS ENTUSIASMA, NOS ENAMORA LO IMPERFECTO</p>
+  </div>
+</div>
+<!-- TERMINA HERO -->
+<h2>TIPS</h2>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/9BEeAd2wU5I" title="YouTube video player"
+  frameborder="200" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen></iframe>
+
+<iframe width="640" height="480" src="https://www.youtube.com/embed/zIDVm8_aLDI" title="YouTube video player"
+  frameborder="200" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen></iframe>
+
+<iframe width="640" height="480" src="https://www.youtube.com/embed/9BEeAd2wU5I" title="YouTube video player"
+  frameborder="200" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen></iframe>
+
+
+<iframe width="640" height="480" src="https://www.youtube.com/embed/kgoDDLxfVOw" title="YouTube video player"
+  frameborder="200" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen></iframe>
+
+
+
+<!-- NOVEDADES -->
+<div id="novedades" class="row py-4">
+  <div class="col-md-5 offset-md-2 py-3">
+    <h2>plantas</h2>
+    <ul class="lista-productos">
+      {{#each novedades}}
+      <li>
+        <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modal{{id}}"><img src={{imagen}}
+            alt="novedades" />{{titulo}}</a>
+        {{/each}}
+    </ul>
+  </div>
+
+  <!-- TESTIMONIOS -->
+  <div id="carouselExampleControls" class="carousel slide col-md-3" data-bs-ride="carousel">
+    <h2 id="testimonios">Ustedes!</h2>
+    <div class="rounded py-3 clients">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="client">
+            <h3>Brenda</h3>
+            <p>“Volveré a comprar,sin duda,me encanta el diseño de los productos que ofrece”</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="client">
+            <h3>Franco</h3>
+            <p></p>“Trato cercano, atencion personalizada y buena calidad. ¿Que más se puede pedir”
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="client">
+            <h3>Alexa</h3>
+            <p>“Recibí el producto muy bien empaquetado y protegido. Me llegó en perfectas condiciones.Muy contenta”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<!-- FIN TESTIMONIOS -->
+<!-- MODAL -->
+{{#each novedades}}
+<div class="modal fade" id="modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          {{titulo}}
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>{{subtitulo}}</h6>
+        <p>{{cuerpo}}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-cerrar" data-bs-dismiss="modal">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}}
+<!-- fin modal -->
+
+<!--inicio nosotros-->
+<div id="nosotros" class="row align-items-stretch my-3 staff py-4 staff">
+  <div class="col-lg-8 offset-lg-2">
+    <h2>Nosotros</h2>
+    <div class="card-deck">
+      <!--inicio card-->
+      <div class="card-deck">
+        <div class="card">
+          <img src="images/nosotros_01.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h2 class="card-title">SERVICIO DE JARDINERIA</h2>
+            <p class="card-text"> Contamos con un equipo especializado de diseño, ejecución y mantenimiento de espacios
+              verdes, piletas y riego. Realizamos fumigaciones para todo tipo de plagas.</p>
+          </div>
+          <div class="card-footer" </div>
+          </div>
+          <div class="card">
+            <img src="images/nosotros_02.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="card-title">Cristian</h2>
+              <p class="card-text">This card has supporting text below as a natural lead-in to
+                additional content.</p>
+            </div>
+            <div class="card-footer">
+
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/nosotros_03.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="card-title">DISEÑO Y MANTENIMIENTO</h2>
+              <p class="card-text">Ofrecemos asesoramiento e ideas para mejorar y decorar sus espacios interiores, a
+                través de la colocación de elementos naturales, ocupándonos del suministro de todos los materiales
+                necesarios, adecuándonos al espacio y a sus requerimientos.</p>
+            </div>
+            <div class="card-footer">
+
+            </div>
+          </div>
+        </div>
+        <!--fin cards-->
+      </div>
+      <!--cierra card-deck-->
+    </div>
+    <!--cierra col-->
+  </div>
+  <!--cierra div nosotros-->
+
+  <!--fin nosotros-->
+  </p>
+
+  <!--inicio historia-->
+  <div id="historia" class="row align-items-center py-4">
+    <div class="col-lg-2 col-md-3 offset-lg-2 d-none d-none d-sm-block">
+      <img src="images/historia_1.jpg" alt="historia 1" class="img-fluid">
+    </div>
+    <div class="col-lg-2 col-md-3 d-none d-sm-block">
+      <img src="images/historia_2.jpg" alt="historia 2" class="img-fluid">
+    </div>
+    <div class="col-lg-2 col-md-3 d-none d-sm-block">
+      <img src="images/historia_3.jpg" alt="historia 3" class="img-fluid">
+    </div>
+    <div class="col-lg-4 col-md-6 mt-4 mt-sm-0">
+      <h2>Historia</h2>
+      <p>Ofrecer un servicio exclusivo que permita cumplir las necesidades de los clientes y reflejar las cualidades
+        propias de los espacios. Generando valor para el cliente, algo que conseguimos gracias a la calidad y
+        excelencia de nuestros servicios. Poniendo a su disposición nuestro equipo técnico y profesional rigurosamente
+        seleccionado, formado y especializado.</p>
+    </div>
+  </div>
+  <!--fin historia-->
+
+  <!-- CONOCENOS -->
+<!--contactanos-->
+  <h2>CONTACTANOS</h2>
+  <div class="col-md-4 offset-md-2">
+    <form action="/" class="mb-3" method="post" id="contact_form">
+      <div class="form-group">
+        <div class="row">
+          <div class="col pb-3">
+            <label for="Name" class="form-label">Nombre</label>
+            <input type="text" name="Name" id="Name" class="form-control" placeholder="Nombre">
+          </div>
+          <div class="col">
+            <label for="lastName" class="form-label">Apellido</label>
+            <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Apellido">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col pb-3">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" class="form-control">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col pb-3">
+            <label for="Consulta" class="d-block">Consulta</label>
+            <textarea name="Consulta" id="Consulta" cols="40" rows="7" placeholder="Su consulta"></textarea>
+          </div>
+        </div>
+        <button class="btn btn-main">Enviar</button>
+        <span id="feedback">
+          {{!-- {{#if message}}
+          <p>{{message}}</p>
+          {{/if}} --}}
+        </span>
+      </div>
+    </form>
+
+  </div>
+
+</div>
+
+</section>
+<!-- FIN CONTACTANOS -->
+
+<!--inicio visitanos-->
+<div id="conocenos" class="row py-4">
+  <div class="col-md-4 offset-md-2">
+    <h2>Visitanos</h2>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.6657918882806!2d-58.421115684770164!3d-34.61261168045708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca5f379d7fa5%3A0x3048c1fa723b6534!2sDon%20Bosco%203775%2C%20C1206%20ABG%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653437122761!5m2!1ses-419!2sar"
+        width="600" height="450" style="border:0;" style="border:0;" allowfullscreen></iframe>
+    </div>
+  </div>
+  <!--cierra div col-md4-->
+
+
+
+  <!-- footer -->
+  <footer>
+    <p class="text-center">Diseñado por:Angelica castro
+  </footer>
+  <!-- FIN FOOTER -->
